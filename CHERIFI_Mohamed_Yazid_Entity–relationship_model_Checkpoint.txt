@@ -1,0 +1,49 @@
+Entity–relationship model Checkpoint
+
+GYM
+
+gyms
+	id,
+	nom,
+	adresse,
+	tel
+
+users
+    id,
+    nom,
+    prenom,
+    adresse,
+    date_de_naissance,
+    sexe
+
+inscriptions
+    id ,
+    user_id,
+    gym_id,
+
+type_sports
+    id,
+    sport
+
+specialities
+    id,
+    nom
+
+coaches
+    id,
+    nom,
+    prenom,
+    age,
+    speciality_id,
+
+sessions
+    id,
+    schedule,
+    type_sport_id,
+    coach_1_id,
+    coach_2_id,
+
+session_users
+    id,
+    user_id,
+    session_id,
